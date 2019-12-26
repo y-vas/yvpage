@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
+* {
+  font-family: Jura;
+}
+
+.floating_city{
+  top:0;
+  left: 0;
+  position: fixed;
+  width:100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content .wrapper {
+  display:block;
+  float:left;
+  margin: 50px auto 100%;
+  width:100%;
+  padding:0 5%;
+  transform:skew(0deg,45deg);
+  -ms-transform:skew(0deg,45deg);
+  -webkit-transform:skew(0deg,45deg);
+}
+
+.content {
+  background-color: #DCDCDC;
+  display:block;
+  position:fixed;
+  margin-top: 50%;
+  width:100%;
+  transform:skew(0deg, -45deg);
+  -ms-transform:skew(0deg, -45deg); /* IE 9 */
+  -webkit-transform:skew(0deg, -45deg); /* Safari and Chrome */
+  z-index: 1;
+  -moz-box-shadow:     inset 0 0 20px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+}
+
+.txt{
+  position: fixed;
+  background-color: #BA7835;
+  width: 86%;
+  margin: auto;
+  padding: 2%;
+}
+
+.txt2 {
+  bottom: 10px;
+  position: fixed;
+  left: 45%;
+  width: 40%;
+  margin: auto;
+  text-align: right;
+  padding: 2%;
+}
+
+.itemo{
+  color: #BA7835;
+  text-decoration: none;
+}
+
+.it:hover {
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .content {
+    margin-top: 30%;
+  }
+
+  .txt {
+    position: fixed;
+    left: 25%;
+    background-color: #BA7835;
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+  }
+
+}
