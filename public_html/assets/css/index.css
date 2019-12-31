@@ -44,6 +44,7 @@
   background-color: #BA7835;
   width: 86%;
   margin: auto;
+  display: none;
   text-align: center;
   padding: 2%;
 }
@@ -73,12 +74,11 @@
   color: black !important;
 }
 
-@media (min-width: 600px) {
-  .contento {
-    margin-top: 30%;
-  }
 
+
+@media (min-height: 800px) {
   .txta {
+    display: block;
     text-align: center;
     position: fixed;
     left: 25%;
@@ -87,5 +87,9 @@
     margin: auto;
     padding: 2%;
   }
-
+}
+@media (min-width: 600px) {
+  .contento {
+    margin-top: 30%;
+  }
 }
