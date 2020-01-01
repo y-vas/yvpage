@@ -274,10 +274,12 @@ city = function(){
         addWindows(i);
 
         decs = DECORAT[i];
+
+        
         if(i % 3 === 0){
             CTX.fillStyle = 'hsl('+city_color+','+colr[1]+'%,'+(colr[2]-1)+"%)";
             CTX.fillRect(decs[0][0]+bp,decs[0][1],decs[0][2],decs[0][3]);
-          }
+        }
 
 
 
