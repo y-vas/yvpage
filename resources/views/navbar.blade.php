@@ -3,14 +3,17 @@
 			<div class="gtco-container">
 
 				<div class="row">
-					<div class="col-sm-2 col-xs-12">
+					<div class="col-sm-3 col-xs-12">
 
-						<div id="gtco-logo"><a href="/">
-							<img id="VY" src="../assets/images/vylogo.svg"> {{ $site_name }} </a>
+						<div id="gtco-logo">
+							<img id="VY" hidden src="../assets/images/vylogo.svg">
+							<img id="logo" src="../images/vylogo.svg">
+
+							<a href="/">{{ $site_name }} </a>
 						</div>
 
 					</div>
-					<div class="col-xs-10 text-right menu-1">
+					<div class="col-xs-9 text-right menu-1">
 						<ul>
 
 							<li class="active" ><a href="/">Home</a></li>

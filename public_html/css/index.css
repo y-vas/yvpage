@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
 
 #city_animation{
   background-color: red;
@@ -5,6 +7,12 @@
   width: 100%;
 }
 
-#VY{
-  display: none;
+#gtco-logo{
+  font-family: Jura;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
