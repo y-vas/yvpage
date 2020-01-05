@@ -11,10 +11,10 @@
 							<div class="col-md-6 gtco-footer-link">
 								<h3>Links</h3>
 								<ul class="gtco-list-link">
-									<li><a href="/">Home</a></li>
+									<!-- <li><a href="/">Home</a></li> -->
 									<li><a href="/about">About</a></li>
 									<li><a href="/portfolio">Portfolio</a></li>
-									<li><a href="/contact">Contact</a></li>
+									<!-- <li><a href="/contact">Contact</a></li> -->
 								</ul>
 							</div>
 
@@ -25,17 +25,17 @@
 									<li><a href="https://www.linkedin.com/in/vasylyovdiy/">Linked In</a></li>
 								</ul>
 							</div>
-							
+
 						</div>
 					</div>
 					<div class="col-md-4 gtco-footer-subscribe">
-						<form class="form" action="/contact" method="get">
+						<!-- <form class="form" action="/contact" method="get">
 						  <div class="form-group">
 						    <label class="sr-only" for="exampleInputEmail3">Email address</label>
 								<input name="mail" type="email" class="form-control" placeholder="Email" value="">
 						  </div>
 							<input type="submit" class="btn btn-primary btn-block" value="Contact">
-						</form>
+						</form> -->
 					</div>
 				</div>
 			</div>

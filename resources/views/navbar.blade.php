@@ -17,7 +17,7 @@
 						<ul>
 
 							<li class="active" ><a href="/">Home</a></li>
-							<li><a href="/about"> About </a></li>
+							<!-- <li><a href="/about"> About </a></li> -->
 
 							<!-- <li class="has-dropdown">
 								<a href="services.html">Services</a>
@@ -39,8 +39,9 @@
 								</ul>
 							</li> -->
 
-							<li><a href="/portfolio">Portfolio</a></li>
-							<li><a href="/contact">Contact</a></li>
+							<!-- <li><a href="/portfolio" href="files/CV2020.pdf">Portfolio</a></li> -->
+							<li><a href="files/CV2020.pdf">Portfolio</a></li>
+							<!-- <li><a href="/contact">Contact</a></li> -->
 
 						</ul>
 					</div>
