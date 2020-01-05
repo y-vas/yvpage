@@ -198,44 +198,6 @@
 			</div>
 		</div>
 		<!-- END  -->
-
-		<div class="gtco-section gto-features">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-zip icon"></i>
-							<div class="copy">
-								<h3>Architect</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-hummer icon"></i>
-							<div class="copy">
-								<h3>Planning</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-plug icon"></i>
-							<div class="copy">
-								<h3>Parks &amp; Events</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		@include('footer')
 
 

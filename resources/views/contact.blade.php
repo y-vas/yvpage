@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 	@include('head')
 
 	<body>
@@ -13,20 +14,23 @@
 		<div class="gtco-section">
 			<div class="gtco-container">
 
+				@include("utils.alert")
+
 				<div class="row">
 					<div class="col-md-6">
-						<form action="#">
+						<form action="/send" method="post">
+							@csrf
 							<div class="form-group">
 								<label for="name">Name</label>
-								<input type="text" class="form-control" id="name">
+								<input name="name" type="text" class="form-control" id="name" required>
 							</div>
 							<div class="form-group">
 								<label for="name">Email</label>
-								<input type="text" class="form-control" id="email" value="{{$_GET['mail'] ?? ''}}">
+								<input name="mail" type="text" class="form-control" id="email" value="{{$_GET['mail'] ?? ''}}" required>
 							</div>
 							<div class="form-group">
 								<label for="message"></label>
-								<textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+								<textarea name="msg" id="message" cols="30" rows="10" class="form-control"></textarea>
 							</div>
 							<div class="form-group">
 								<input type="submit" class="btn btn btn-special btn-block" value="Send Message">

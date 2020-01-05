@@ -31,6 +31,8 @@
 
 		<div class="gtco-section">
 			<div class="gtco-container">
+        @include("utils.alert")
+        
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
 						<p>{{$presentation}}</p>

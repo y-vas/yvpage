@@ -9,4 +9,16 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function __construct(){
+        if (isset($_SESSION['alert'])) {
+          $_SESSION['alert'] = '';
+        }
+    }
+
+
+    public function __destruct() {
+       echo "string";
+       die;
+    }
 }

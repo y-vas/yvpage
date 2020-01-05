@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Routing\Controller as BaseController;
-use \VSQL\VSQL\VSQL;
+use AddSQL\AddSQL;
 
 class Main extends Controller {
 
@@ -27,19 +27,19 @@ class Main extends Controller {
     return view('welcome', $keys );
   }
 
-
     public function about(){
 
       $keys = array(
-        "pref" => "About | ",
-        "site_name" => "Vasyl Yovdiy",
-        "site_url" => "yovdiyvasyl.xyz",
+        "pref"      => "About | " ,
+        "site_name" => "Vasyl Yovdiy" ,
+        "site_url"  => "yovdiyvasyl.xyz" ,
       );
 
       return view('about', $keys );
     }
 
     public function contact(){
+
 
       $keys = array(
         "pref" => "Contact | ",
@@ -51,15 +51,47 @@ class Main extends Controller {
     }
 
     public function cv(){
+
+
       return "cv";
     }
 
+    public function send(Request $req){
+      $name = $_POST['name'];
+      $mail = $_POST['mail'];
+      $msg  = $_POST['msg'];
+
+      try {
+
+        Mail::send('mail.base', [
+          'name' => $name,
+          'mail' => $mail,
+          'msg'  => $msg,
+
+          ] , function ($m) use ($name, $mail) {
+            $m->from( $mail , $name );
+            $m->to("yovdiyvasyl@gmail.com", 'Vasyl')->subject($name . ' says to you!');
+          });
+          
+      } catch (\Exception $e) {
+          $_SESSION['alert'] = "Something went wrong, please try again!";
+          $_SESSION['acol'] = "danger";
+
+          return redirect('/contact');
+      }
+
+
+      $_SESSION['alert'] = "Your message has ben sent, thank you!";
+      $_SESSION['acol'] = "success";
+      return redirect('/');
+    }
+
     public function asql(){
-      
-      $v = new VSQL('','null');
+
+      $v = new AddSQL('','null');
       $v->query("SELECT
         r.id_product,
-        COLLECTION_VSQL(
+        COLLECTION@(
             'id' => r.id,
             'id_costumer' => r.id_customer,
             'id_cartitem' => r.id_cartitem,
@@ -80,5 +112,6 @@ class Main extends Controller {
       {{ AND r.id_product = <:id_product> }}
       {{ AND r.id_product in (<array:products>) }}
       group by r.id_product",[],"debug");
+
     }
 }
