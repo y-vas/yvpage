@@ -12,7 +12,7 @@
 <html>
   @include('head')
   <script src="../js/city.js"></script>
-  
+
 
 	<body>
 
@@ -54,7 +54,7 @@
                 <a href="https://github.com/y-vas/adaptative-query">
 									<h3>Adaptative SQL Query</h3>
 									<p> An PHP query helper to handdle the Database requests. </p>
-                  <p><a href="/adaptative-query" class="btn btn-sm btn-special"> Test it </a></p>
+                  <!-- <p><a href="/adaptative-query" class="btn btn-sm btn-special"> Test it </a></p> -->
                   <span class="post-date"> Forked From Dotravel </span>
 								</a>
 							</li>
