@@ -1,12 +1,5 @@
-<!DOCTYPE HTML>
-<!--
-	Aesthetic by freehtml5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
--->
 <html>
 	@include('head')
-
 	<body>
 
 	<div class="gtco-loader"></div>

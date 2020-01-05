@@ -8,15 +8,15 @@
 					</div>
 					<div class="col-md-4">
 						<div class="row">
-							<div class="col-md-6 gtco-footer-link">
+							<!-- <div class="col-md-6 gtco-footer-link">
 								<h3>Links</h3>
 								<ul class="gtco-list-link">
-									<!-- <li><a href="/">Home</a></li> -->
+									<li><a href="/">Home</a></li>
 									<li><a href="/about">About</a></li>
 									<li><a href="/portfolio">Portfolio</a></li>
-									<!-- <li><a href="/contact">Contact</a></li> -->
+									<li><a href="/contact">Contact</a></li>
 								</ul>
-							</div>
+							</div> -->
 
 							<div class="col-md-6 gtco-footer-link">
 								<h3>Info</h3>
