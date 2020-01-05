@@ -8,18 +8,18 @@
 						<div id="gtco-logo">
 							<img id="VY" hidden src="../assets/images/vylogo.svg">
 							<img id="logo" src="../images/vylogo.svg">
-
-							<a href="/">{{ $site_name }} </a>
+							<a href="/"> {{ $site_name }} </a>
 						</div>
 
 					</div>
+
 					<div class="col-xs-9 text-right menu-1">
 						<ul>
 
 							<li class="active" ><a href="/">Home</a></li>
 							<li><a href="/about"> About </a></li>
 
-							<li class="has-dropdown">
+							<!-- <li class="has-dropdown">
 								<a href="services.html">Services</a>
 								<ul class="dropdown">
 									<li><a href="#">Web Design</a></li>
@@ -37,10 +37,10 @@
 									<li><a href="#">Sass</a></li>
 									<li><a href="#">jQuery</a></li>
 								</ul>
-							</li>
+							</li> -->
 
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="/portfolio">Portfolio</a></li>
+							<li><a href="/contact">Contact</a></li>
 
 						</ul>
 					</div>

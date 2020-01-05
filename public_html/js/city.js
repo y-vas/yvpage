@@ -12,8 +12,8 @@ $( document ).ready(function() {
   var CTX = CVS.getContext("2d");
 
   var BKG = CTX.createLinearGradient(0, 0, 0, CVS.height*3);
-  BKG.addColorStop(0, "#245159");
-  BKG.addColorStop(1, "#162225");
+  BKG.addColorStop(0, "#FFFFFF");
+  BKG.addColorStop(1, "#FFFFFF");
 
   CVS.width = window.innerWidth/2;
   CVS.height= window.innerHeight;

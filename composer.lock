@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa503b104f700e4337a4bf209a56bc8a",
+    "content-hash": "6fcfac35303c1048b0c03e2ed6cadbe3",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2964,6 +2964,36 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "y-vas/adaptative-query",
+            "version": "v1.28",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/y-vas/adaptative-query.git",
+                "reference": "d1cb7b4a9a1899543b7992ecf6de84f0b49d158e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/y-vas/adaptative-query/zipball/d1cb7b4a9a1899543b7992ecf6de84f0b49d158e",
+                "reference": "d1cb7b4a9a1899543b7992ecf6de84f0b49d158e",
+                "shasum": ""
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "VSQL\\VSQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Vasyl Yovdiy",
+                    "email": "yovdiyvasyl@gmail.com"
+                }
+            ],
+            "description": "SQL Helper",
+            "time": "2019-12-18T12:26:13+00:00"
         }
     ],
     "packages-dev": [
