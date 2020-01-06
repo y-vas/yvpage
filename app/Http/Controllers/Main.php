@@ -63,18 +63,25 @@ class Main extends Controller {
 
       try {
 
-        Mail::send('mail.base', [
-          'name' => $name,
-          'mail' => $mail,
-          'msg'  => $msg,
+        ini_set( 'display_errors', 1 );
+        error_reporting( E_ALL );
+        $to = "yovdiyvasyl@gmail.com";
+        $subject = "Checking PHP mail";
+        $headers = "From:" . $name . $mail ;
+        mail($to,$subject,$msg, $headers);
 
-          ] , function ($m) use ($name, $mail) {
-            $m->from( $mail , $name );
-            $m->to("yovdiyvasyl@gmail.com", 'Vasyl')->subject($name . ' says to you!');
-          });
+        // Mail::send('mail.base', [
+        //   'name' => $name,
+        //   'mail' => $mail,
+        //   'msg'  => $msg,
+        //
+        //   ] , function ($m) use ($name, $mail) {
+        //     $m->from( $mail , $name );
+        //     $m->to("yovdiyvasyl@gmail.com", 'Vasyl')->subject($name . ' says to you!');
+        //   });
 
       } catch (\Exception $e) {
-          return redirect('/contact?alert=Something went wrong'.urlencode($e->getMessage()).', please try again!&acol=danger');
+          return redirect('/contact?alert=Something went wrong, please try again!&acol=danger');
       }
 
       return redirect('/?alert=Your message has ben sent, thank you!&acol=success');
