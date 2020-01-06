@@ -67,7 +67,7 @@ class Main extends Controller {
         error_reporting( E_ALL );
         $to = "yovdiyvasyl@gmail.com";
         $subject = "Checking PHP mail";
-        $headers = "From:" . $name . $mail ;
+        $headers = "From:" . $name . " <".$mail.">" ;
         mail($to,$subject,$msg, $headers);
 
         // Mail::send('mail.base', [
