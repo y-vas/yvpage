@@ -63,12 +63,9 @@ class Main extends Controller {
 
       try {
 
-        ini_set( 'display_errors', 1 );
-        error_reporting( E_ALL );
-        $from = "test@hostinger-tutorials.com";
         $to = "yovdiyvasyl@gmail.com";
-        $subject = "Checking PHP mail";
-        $headers = "From:" . $from;
+        $subject = "Mail from $name";
+        $headers = "From:" . $mail;
         mail($to,$subject,$msg, $headers);
 
 
