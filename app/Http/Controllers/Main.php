@@ -63,28 +63,18 @@ class Main extends Controller {
 
       try {
 
-        ini_set( 'display_errors', 1 );
-        error_reporting( E_ALL );
-        $from = "test@hostinger-tutorials.com";
-        $to = "yovdiyvasyl@gmail.com";
-        $subject = "Checking PHP mail";
-        $message = "PHP mail works just fine";
-        $headers = "From:" . $from;
-        mail($to,$subject,$message, $headers);
-        echo "The email message was sent.";
+        Mail::send('mail.base', [
+          'name' => $name,
+          'mail' => $mail,
+          'msg'  => $msg,
 
-        // Mail::send('mail.base', [
-        //   'name' => $name,
-        //   'mail' => $mail,
-        //   'msg'  => $msg,
-        //
-        //   ] , function ($m) use ($name, $mail) {
-        //     $m->from( $mail , $name );
-        //     $m->to("yovdiyvasyl@gmail.com", 'Vasyl')->subject($name . ' says to you!');
-        //   });
+          ] , function ($m) use ($name, $mail) {
+            $m->from( $mail , $name );
+            $m->to("yovdiyvasyl@gmail.com", 'Vasyl')->subject($name . ' says to you!');
+          });
 
       } catch (\Exception $e) {
-          return redirect('/contact?alert=Something went wrong, please try again!&acol=danger');
+          return redirect('/contact?alert=Something went wrong'.urlencode($e->getMessage()).', please try again!&acol=danger');
       }
 
       return redirect('/?alert=Your message has ben sent, thank you!&acol=success');
