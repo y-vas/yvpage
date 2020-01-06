@@ -74,7 +74,7 @@ class Main extends Controller {
           });
 
       } catch (\Exception $e) {
-          return redirect('/contact?alert=Something went wrong'.$e->getMessage().', please try again!&acol=danger');
+          return redirect('/contact?alert=Something went wrong'.urlencode($e->getMessage()).', please try again!&acol=danger');
       }
 
       return redirect('/?alert=Your message has ben sent, thank you!&acol=success');
