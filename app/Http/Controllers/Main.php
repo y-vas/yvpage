@@ -63,13 +63,14 @@ class Main extends Controller {
 
       try {
 
-        // ini_set( 'display_errors', 1 );
-        // error_reporting( E_ALL );
-
+        ini_set( 'display_errors', 1 );
+        error_reporting( E_ALL );
+        $from = "test@hostinger-tutorials.com";
         $to = "yovdiyvasyl@gmail.com";
-        $subject = "YV Notification!";
-        $headers = "From:" . $name . " <".$mail.">" ;
+        $subject = "Checking PHP mail";
+        $headers = "From:" . $from;
         mail($to,$subject,$msg, $headers);
+
 
         // Mail::send('mail.base', [
         //   'name' => $name,
