@@ -72,18 +72,12 @@ class Main extends Controller {
             $m->from( $mail , $name );
             $m->to("yovdiyvasyl@gmail.com", 'Vasyl')->subject($name . ' says to you!');
           });
-          
-      } catch (\Exception $e) {
-          $_SESSION['alert'] = "Something went wrong, please try again!";
-          $_SESSION['acol'] = "danger";
 
-          return redirect('/contact');
+      } catch (\Exception $e) {
+          return redirect('/contact?alert=Something went wrong, please try again!&acol=danger');
       }
 
-
-      $_SESSION['alert'] = "Your message has ben sent, thank you!";
-      $_SESSION['acol'] = "success";
-      return redirect('/');
+      return redirect('/?alert=Your message has ben sent, thank you!&acol=success');
     }
 
     public function asql(){
