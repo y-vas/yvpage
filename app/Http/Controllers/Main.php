@@ -64,10 +64,9 @@ class Main extends Controller {
       try {
 
         $to = "yovdiyvasyl@gmail.com";
-        $subject = "Mail from $name";
-        $headers = "From:" . $mail;
+        $subject = "Mail from $name - $mail";
+        $headers = "From: info@yovdiyvasyl.xyz" ;
         mail($to,$subject,$msg, $headers);
-
 
         // Mail::send('mail.base', [
         //   'name' => $name,
