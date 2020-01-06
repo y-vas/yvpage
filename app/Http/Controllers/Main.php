@@ -63,11 +63,13 @@ class Main extends Controller {
 
       try {
 
-        ini_set( 'display_errors', 1 );
-        error_reporting( E_ALL );
-        $subject = "WebSite Contact";
+        // ini_set( 'display_errors', 1 );
+        // error_reporting( E_ALL );
+
+        $to = "yovdiyvasyl@gmail.com";
+        $subject = "YV Notification!";
         $headers = "From:" . $name . " <".$mail.">" ;
-        mail( env('MAIL_USERNAME') ,$subject,$msg, $headers);
+        mail($to,$subject,$msg, $headers);
 
         // Mail::send('mail.base', [
         //   'name' => $name,
