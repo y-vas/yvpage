@@ -6,6 +6,7 @@
 						<h3>{{ $site_name }}</h3>
 						<p> Look, don't be shy. </p>
 					</div>
+
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-6 gtco-footer-link">
@@ -28,6 +29,7 @@
 
 						</div>
 					</div>
+
 					<div class="col-md-4 gtco-footer-subscribe">
 						<form class="form" action="/contact" method="get">
 						  <div class="form-group">
