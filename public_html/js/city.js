@@ -76,11 +76,11 @@ $( document ).ready(function() {
         img = images;
         iw = images.width;
         // ih = images.height;
-        ih = images.height*2;
+        ih = images.height*3  ;
         tan = ih/iw;
         lh = tan*rwid;
         lw = rwid;
-        lt = h-rheg-lh/2;
+        lt = h-rheg-lh/3;
       }
 
     logo_ned = [ii, img, lh, lw, lt];

@@ -5,3 +5,10 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			str = window.location.href
+
+			
+		});
+	</script>

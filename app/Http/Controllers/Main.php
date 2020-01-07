@@ -52,8 +52,13 @@ class Main extends Controller {
 
     public function cv(){
 
+      $keys = array(
+        "pref" => "CV | ",
+        "site_name" => "Vasyl Yovdiy",
+        "site_url" => "yovdiyvasyl.xyz",
+      );
 
-      return "cv";
+      return view('cv', $keys );
     }
 
     public function send(Request $req){

@@ -40,7 +40,7 @@
 							</li> -->
 
 							<!-- <li><a href="/portfolio" href="files/CV2020.pdf">Portfolio</a></li> -->
-							<li><a href="files/CV2020.pdf">Portfolio</a></li>
+							<li><a href="/cv">CV</a></li>
 							<li><a href="/contact">Contact</a></li>
 
 						</ul>
