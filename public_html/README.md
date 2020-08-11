@@ -1,3 +1,0 @@
-Yovdiy Vasyl
-
-Website 
