@@ -6,16 +6,13 @@
       margin: 0;
       padding: 0;
     }
-
     #name{
       text-align:center;
     }
-
     #main-info{
       padding:0px;
     }
-
-    #main-info li {
+    #main-info div {
       text-align:center;
       list-style-type: none;
       width: 20%;
@@ -36,27 +33,22 @@
       height: 9px;
       border-bottom: 2px solid grey;
     }
-
     .col{
       margin:15px;
     }
-
     .col-3,.col-9{
       margin:15px;
       float:left;
     }
-
     .col-3 {
       width: calc(25% - 30px);
     }
     .col-9 {
       width: calc(75% - 30px);
     }
-
     #table{
       /* background:red; */
     }
-
     #table tr td:first-child{
       font-weight: bold;
     }
@@ -65,13 +57,13 @@
 
 <body>
   <h3 id="name"> Vasyl Yovdiy </h3>
-  <ul id='main-info' >
-    <li> +34 611412443 </li>
-    <li> yovdiyvasyl@gmail.com </li>
-    <li>  --- WEB ---  </li>
-    <li> github.com/y-vas </li>
-    <li> linkedin.com/in/vasylyovdiy/ </li>
-  </ul>
+  <nav id='main-info' >
+    <div> +34 611412443 </div>
+    <div> yovdiyvasyl@gmail.com </div>
+    <div>  --- WEB ---  </div>
+    <div> github.com/y-vas </div>
+    <div> linkedin.com/in/vasylyovdiy/ </div>
+  </nav>
 
   <div class="separator">
     <label> About </label>
@@ -82,7 +74,7 @@
     <table id="table">
       <tr>
         <td> Programing Languages </td>
-        <td> Python, PHP, JAVA, NodeJs, C++ </td>
+        <td> Python, PHP, JAVA, JavaScript, TypeScript, C++ </td>
       </tr>
 
       <tr>
@@ -100,10 +92,9 @@
       </tr>
 
       <tr>
-        <td> Backend and Systems </td>
+        <td> Backend and Utilites </td>
         <td>
-          Linux, Tensorflow, Keras ,
-          SQL, NoSQL
+          Git, Docker, Bash, SQL, NoSQL, Tensorflow, Keras, RaspBerry
         </td>
       </tr>
 
@@ -111,13 +102,99 @@
   </div>
 
   <div class="separator">
-    <label> About </label>
+    <label> Experience </label>
     <div class="hr"></div>
   </div>
 
+  <div class="col">
+  <p>
+    Kompini / Fullstack Developer
+  </p>
+  <p>
+    Vic / 02­-2020 to 04-­2020
+  </p>
+
+  <p>­- Reformated various old projects. </p>
+  <p>­- Made a Raspberry application to interact with the website user interface. </p>
+  <p>­- Participated in various small projects to help the team. </p>
+
+  </div>
+
+  <div class="col">
+    <p> DoTravel / Fullstack Developer </p>
+    <p> Barcelona / 03­-2019 to 12-­2019 </p>
+
+    <p> ­- Developed database library for faster performance and more adaptative queries. </p>
+    <p> ­- Developed an intermediary email service for private conversations. </p>
+    <p> ­- Created an Articles content management that allowed a more dynamic presentation. </p>
+    <p> ­- Reviewed the content of the webpage and optimized part of it. </p>
+    <p> ­- Made a template creator that manages the basics MVC framework. </p>
+    <p> ­- Developed a certificates classifier TensorFlow and OpenCV. </p>
+  </div>
 
 
+  <div class="col">
+    <p> Inducontrol / JAVA Developer </p>
+    <p> Vic / 04­-2018 to 03-­2019 </p>
 
+    <p> ­- ­Developed a MySQL parser from an old Database API. </p>
+    <p> ­- Made a Sawmill content management and statistics review. </p>
+    <p> - Created various user questionaries. </p>
+    <p> ­- Participated in various small projects to help the team. </p>
+  </div>
 
+  <div class="separator">
+    <label> Languages </label>
+    <div class="hr"></div>
+  </div>
+
+  <div class="col">
+    <table>
+      <tr>
+        <td> Spanish </td>
+        <td> written and spoken </td>
+      </tr>
+      <tr>
+        <td> Catalan </td>
+        <td> written and spoken </td>
+      </tr>
+      <tr>
+        <td> English </td>
+        <td> written and spoken </td>
+      </tr>
+      <tr>
+        <td> Russian </td>
+        <td> spoken </td>
+      </tr>
+      <tr>
+        <td> Romanian </td>
+        <td> spoken </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="separator">
+    <label> Education </label>
+    <div class="hr"></div>
+  </div>
+
+  <div class="col">
+    <table>
+      <tr>
+        <td> Bachelor </td>
+        <td> Technological Bachelor </td>
+      </tr>
+
+      <tr>
+        <td> Formative Course </td>
+        <td> System Administration </td>
+      </tr>
+
+      <tr>
+        <td> Udemy Curses </td>
+        <td> Angular and NodeJs </td>
+      </tr>
+    </table>
+  </div>
 
 </body>
