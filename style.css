@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@400&display=swap');
+:root{
+  --primary: #44565e;
+  --secundary: #a9a9a9;
+  --border: 1px solid var(--secundary);
+  --font-size: 0.9rem;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+  font-size: var(--font-size);
+}
+
+
+@media print {
+  :root{
+    --border: 1px solid var(--primary);
+  }
+}
+
+#name{
+   margin: auto;
+}
+
+#name h3{
+  font-family:'Merienda One', cursive;
+  width: 100%;
+  text-align: center;
+  color: var(--primary);
+  font-size: 50px;
+  padding: auto;
+  padding-bottom: 10px;
+  transition-delay: 0s;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto;
+  transition: width 1s;
+}
+
+#name:hover h3{
+  width: 90px;
+  transition-delay: 0s;
+  transition: width 0.5s;
+  margin: auto;
+}
+
+#main-info , .table{
+  width:100%;
+}
+
+#main-info{
+  padding: 10px 0px;
+  border-top: var(--border);
+  font-size: 12px;
+  height:20px;
+}
+
+#main-info div {
+  text-align:center;
+  width: 20%;
+  float: left;
+}
+
+.separator{
+  width:calc(100% - 30px);
+  height: var(--font-size);
+  padding: 2px;
+  padding-bottom: 0.3rem;
+  border-bottom: var(--border);
+  text-indent: 1.5rem;
+  font-weight: bold;
+  margin: 0 15px;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.col{
+  padding: 0.5rem 0px;
+}
+
+#table{
+  width:100%;
+}
+
+#table tr td:first-child , .table tr td:first-child{
+  font-weight: bold;
+}
+
+{
+  font-weight: bold;
+}
+
+.job-position{
+  width: 100%;
+  height: var(--font-size);
+}
+
+.job-position div{
+  float:left;
+  font-weight: bold;
+}
+
+.job-position div:last-child{
+  font-style: italic;
+  float:right;
+}
+
+.w50{
+  width: 50%;
+  float: left;
+}
+
+body{
+  margin: 100px 200px;
+  margin-bottom: 500px;
+}
+@media print {
+  body{ margin: 0px }
+}
