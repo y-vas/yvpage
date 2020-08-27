@@ -5,6 +5,7 @@
   --border: 1px solid var(--secundary);
   --font-size: 0.9rem;
 }
+
 a{
   text-decoration: none;
   color: inherit;
@@ -16,7 +17,6 @@ a{
   padding:0;
   font-size: var(--font-size);
 }
-
 
 @media print {
   :root{
@@ -57,7 +57,7 @@ a{
 #main-info{
   padding: 10px 0px;
   border-top: var(--border);
-  font-size: 12px;
+  font-size: .5em !important;
   height:20px;
 }
 
@@ -81,7 +81,9 @@ a{
 }
 
 .col{
+  width: 100%;
   padding: 0.5rem 0px;
+  font-size: var(--font-size);
 }
 
 #table{
@@ -92,7 +94,7 @@ a{
   font-weight: bold;
 }
 
-  .job-position{
+.job-position{
   width: 100%;
   height: var(--font-size);
 }
@@ -113,9 +115,14 @@ a{
 }
 
 body{
-  margin: 100px 200px;
-  margin-bottom: 500px;
+  margin: 5% 10%;
+  margin-bottom: 25%;
 }
+
 @media print {
   body{ margin: 0px }
+}
+
+.info div {
+  font-size: 1em;
 }
