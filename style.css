@@ -6,6 +6,12 @@
   --font-size: 0.9rem;
 }
 
+#city_animation{
+  background-color: grey;
+  height: 50vh !important;
+  width: 100%;
+}
+
 a{
   text-decoration: none;
   color: inherit;
