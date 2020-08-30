@@ -6,12 +6,6 @@
   --font-size: 0.9rem;
 }
 
-#city_animation{
-  background-color: grey;
-  height: 50vh !important;
-  width: 100%;
-}
-
 a{
   text-decoration: none;
   color: inherit;
@@ -42,9 +36,10 @@ a{
   font-family:'Merienda One', cursive;
   width: 100%;
   text-align: center;
-  color: var(--primary);
+  color: #1E747C;
   font-size: 50px;
   padding: auto;
+  /* text-shadow: 2px 2px 2px #FFFFFF; */
   padding-bottom: 10px;
   transition-delay: 0s;
   overflow: hidden;
@@ -59,6 +54,16 @@ a{
   transition: width 0.5s;
   margin: auto;
 }
+
+#city_animation{
+  background-color: grey;
+  height: calc(82px);
+  width: 80%;
+  position: absolute;
+  /* top: 0; */
+  z-index: -1;
+}
+
 
 #main-info , .table{
   width:100%;

@@ -25,9 +25,9 @@ $( document ).ready(function() {
   var pc = w/100, ph = h/100;
 
   STRUCTS = []; WINDOWS = []; DECORAT = [];
-  STR_OPT = [30,2]; // 0 = Buildings, 1 = CityPartsDivisions
+  STR_OPT = [15,2]; // 0 = Buildings, 1 = CityPartsDivisions
 
-  rmx = pc*15;  rmn = pc*10; // building max and min widht
+  rmx = pc*10;  rmn = pc*5; // building max and min widht
   rhx = ph*20;  rhn = ph*10; // building max and min height
 
   rmx2 = pc*15;  rmn2 = pc*10;
@@ -70,18 +70,18 @@ $( document ).ready(function() {
     vasylWindow = Math.floor(Math.random() * twin) + 0;
     ii=img=iw=ih=tan=lh=lw=lt= null;
 
-    if (i == STR_OPT[0]-1) {
-        images = document.getElementById("VY");
-        ii = true;
-        img = images;
-        iw = images.width;
-        // ih = images.height;
-        ih = images.height*3  ;
-        tan = ih/iw;
-        lh = tan*rwid;
-        lw = rwid;
-        lt = h-rheg-lh/3;
-      }
+    // if (i == STR_OPT[0]-1) {
+    //     images = document.getElementById("VY");
+    //     ii = true;
+    //     img = images;
+    //     iw = images.width;
+    //     // ih = images.height;
+    //     ih = images.height*3  ;
+    //     tan = ih/iw;
+    //     lh = tan*rwid;
+    //     lw = rwid;
+    //     lt = h-rheg-lh/3;
+    // }
 
     logo_ned = [ii, img, lh, lw, lt];
     StrProp = [rpos, 0, rwid, rheg , getRandomColor(), vel, logo_ned, true, 0];
