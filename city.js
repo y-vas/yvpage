@@ -2,7 +2,7 @@ var log = false;
 var timeout;
 var color = 0;
 
-var default_city_color = 210;
+var default_city_color = 190;
 var city_color = default_city_color;
 
 $( document ).ready(function() {
@@ -27,7 +27,7 @@ $( document ).ready(function() {
   STRUCTS = []; WINDOWS = []; DECORAT = [];
   STR_OPT = [15,2]; // 0 = Buildings, 1 = CityPartsDivisions
 
-  rmx = pc*10;  rmn = pc*5; // building max and min widht
+  rmx = pc*5;  rmn = pc*5; // building max and min widht
   rhx = ph*20;  rhn = ph*10; // building max and min height
 
   rmx2 = pc*15;  rmn2 = pc*10;
@@ -169,7 +169,6 @@ $( document ).ready(function() {
           addWindows(i);
 
           decs = DECORAT[i];
-
 
           if(i % 3 === 0){
               CTX.fillStyle = 'hsl('+city_color+','+colr[1]+'%,'+(colr[2]-1)+"%)";
