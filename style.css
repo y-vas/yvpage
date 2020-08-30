@@ -139,4 +139,7 @@ body{
 
 @media print {
   body{ margin: 0px }
+  #city_animation{
+    display: none;
+  }
 }
