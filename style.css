@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@400&display=swap');
-:root{
+
+:root{ }
+
+.fa-merienda {
+  font-family:'Merienda One', cursive;
+}
 
 
+.mg-body{
+  margin: 20%;
+}
+
+@media screen and (max-width: 800px) {
+  .mg-body {
+    margin: 10%;
+  }
+}
+
+@media print {
+  .mg-body{
+    margin: 50px;
+  }
 }
