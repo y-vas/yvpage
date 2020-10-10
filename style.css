@@ -18,6 +18,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .mg-body {
+    margin: 5%;
+  }
+}
+
 @media print {
   .mg-body{
     margin: 50px;
