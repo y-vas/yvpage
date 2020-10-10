@@ -8,21 +8,9 @@
 
 
 .mg-body{
-  margin: 20%;
-  margin-top: 10%;
+  margin: 10%;
 }
 
-@media screen and (max-width: 800px) {
-  .mg-body {
-    margin: 10%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .mg-body {
-    margin: 5%;
-  }
-}
 
 @media print {
   .mg-body{
