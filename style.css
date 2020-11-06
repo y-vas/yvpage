@@ -6,13 +6,14 @@
   font-family:'Merienda One', cursive;
 }
 
-
 .mg-body{
   margin: 10%;
 }
 
-
 @media print {
+  .no-print{
+      display: none;
+  }
   .mg-body{
     margin: 50px;
   }
