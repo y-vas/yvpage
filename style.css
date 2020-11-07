@@ -10,6 +10,7 @@
   margin: 10%;
 }
 
+.page-break { display: none; }
 @media print {
   .no-print{
       display: none;
@@ -17,4 +18,5 @@
   .mg-body{
     margin: 50px;
   }
+  .page-break { display: block; page-break-before: always; }
 }
