@@ -1,3 +1,7 @@
 $(document).ready(function(){
-  $('.experiences').html( $('#experiences').html() )
+
+  $.ajax({
+    url: '/experiences.html',
+    success: function(data){ $('.experiences').html( data ); },
+  });
 })
