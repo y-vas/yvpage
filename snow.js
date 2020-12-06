@@ -64,20 +64,9 @@ function init() {
 	}
 
 	var starfield = $i('canvas');
-	// starfield.style.position='absolute';
-	// starfield.width =w;
-	// starfield.height=h;
 	context=starfield.getContext('2d');
-	//context.lineCap='round';
 	context.fillStyle='rgb(255,255,255)';
 	context.strokeStyle='#17a2b8';
-
-	// var adsense=$i('adsense');
-	// adsense.style.left=Math.round((w-728)/2)+'px';
-	// adsense.style.top=(h-15)+'px';
-	// adsense.style.width=728+'px';
-	// adsense.style.height=15+'px';
-	// adsense.style.display='block';
 	}
 
 function anim() {
