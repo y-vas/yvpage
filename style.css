@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@400&display=swap');
 
-:root{ }
+#canvas{
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
 
+:root{ }
 .fa-merienda {
   font-family:'Merienda One', cursive;
 }
@@ -16,13 +25,21 @@
   }
 }
 
-.page-break { display: none; }
+.page-break {
+  display: none;
+}
+
 @media print {
   .no-print{
-      display: none;
+    display: none;
   }
+
   .mg-body{
     margin: 50px;
   }
-  .page-break { display: block; page-break-before: always; }
+
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
 }

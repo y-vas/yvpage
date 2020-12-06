@@ -4,4 +4,7 @@ $(document).ready(function(){
     url: '/experiences.html',
     success: function(data){ $('.experiences').html( data ); },
   });
+
+  start()
+  
 })
