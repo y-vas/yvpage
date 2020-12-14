@@ -9,7 +9,18 @@
   z-index: -1;
 }
 
-:root{ }
+#cv{
+  background: rgba(255,255,255, 0.9);
+  transition: 1s;
+  padding: 50px;
+}
+
+#cv:hover{
+  background: rgba(255,255,255, 1 );
+  transition: 1s;
+}
+
+:root{}
 .fa-merienda {
   font-family:'Merienda One', cursive;
 }
@@ -29,6 +40,10 @@
 }
 
 @media print {
+  #cv{
+    padding: 0%;
+  }
+
   .no-print{
     display: none;
   }

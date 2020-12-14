@@ -5,6 +5,7 @@ $(document).ready(function(){
     success: function(data){ $('.experiences').html( data ); },
   });
 
-  start()
+  // start()
+
   
 })
