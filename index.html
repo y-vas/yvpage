@@ -13,8 +13,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" media="screen,print">
+    <script src="localization.js" ></script>
     <script src="main.js" ></script>
-    <!-- <script src="snow.js" ></script> -->
     <script src="city.js" ></script>
   </head>
 
@@ -43,7 +43,7 @@
         <div class="row">
           <div class="text-right">
             <h1 class="fa-merienda"> Vasyl Yovdiy </h1>
-            <h4 class="mt-4"> Full Stack Developer </h4>
+            <h4 trans='role' class="mt-4"> Full Stack Developer </h4>
           </div>
         </div>
       </div>
@@ -52,16 +52,16 @@
 
 
     <div id="complex" class="tab-pane active ">
-      <h4 class="row pb-3"> Skills </h4>
+      <h4 trans='skills' class="row pb-3"> Skills </h4>
 
       <div class="row">
 
         <div class="col-6 mt-3">
-          <b> Programing Languages / Tecnologies </b>
+          <b trans='prt' > Programing Languages / Tecnologies </b>
           <hr>
 
           <li> Python3, tensorflow, selenium, keras, jupyter, matplotlib ,numpy ,pandas ,pip , pypi </li>
-          <li> JavaScript, TypeScript, JQuery , Ajax, select2, d3.js/c3.js </li>
+          <li> JavaScript, TypeScript, JQuery, Ajax, select2, d3.js/c3.js </li>
 
           <li> PHP, Composer, PHPMailer, Stripe, Doctrine </li>
           <li> Bash, Grep, RegEx, awk, vim </li>
@@ -72,10 +72,11 @@
           <li> Software Architecture Design, UML </li>
           <li> RaspBerry, GPIO </li>
 
+          <li> C/C++/Cython </li>
         </div>
 
           <div class="col-6 mt-3 ">
-            <b> Development Tools </b>
+            <b trans='devTol' > Development Tools </b>
             <hr>
 
             <li> Linux </li>
@@ -91,7 +92,7 @@
           </div>
 
           <div class="col-6 mt-3">
-            <b> Frameworks / Web Servers </b>
+            <b trans='webserv'> Frameworks / Web Servers </b>
             <hr>
 
             <li> Laravel/Symphony </li>
@@ -119,17 +120,17 @@
             <div class="row">
 
               <div class="col-6 mt-3">
-                <b> Spoken Languages </b>
+                <b trans='langs' > Spoken Languages </b>
                 <hr>
 
-                <li> English </li>
-                <li> Spanish/Catalan </li>
-                <li> Romanian (spoken) </li>
-                <li> Russian (spoken with difficulties) </li>
+                <li trans > English </li>
+                <li trans > Spanish/Catalan </li>
+                <li trans > Romanian (spoken) </li>
+                <li trans > Russian (spoken with difficulties) </li>
               </div>
 
               <div class="col-6 mt-3">
-                <b> Methodologies </b>
+                <b trans > Methodologies </b>
                 <hr>
                 <li> Scrum/Agile </li>
                 <li> SOLID </li>
@@ -140,7 +141,7 @@
           </div>
 
           <div class="col-6 mt-3">
-            <b> Hardware / Systems </b>
+            <b trans > Hardware / Systems </b>
             <hr>
 
             <li> Linux, Ubuntu, Mint, Arch, Raspibian </li>
@@ -160,72 +161,72 @@
     <div id="simple" class="tab-pane fade">
 
         <div class="row h5 card-title">
-          <b>About</b>
+          <b trans='skills' >Skills</b>
         </div>
 
         <div>
           <table class="table table-borderless table-sm">
             <tbody><tr>
-              <th> Programing Languages </th>
-              <td> Python, PHP, JAVA, JavaScript, TypeScript </td>
+              <th trans='prt' > Programing Languages </th>
+              <td> Python, PHP, JAVA, JavaScript, TypeScript, C++ </td>
             </tr>
 
             <tr>
-              <th> Familiar Frameworks </th>
+              <th trans='famfram' > Familiar Frameworks </th>
               <td> Laravel, Symphony, NodeJs , Django, Angular, Ionic, Wordpress </td>
             </tr>
 
             <tr>
-              <th> FrontEnd and Utilites </th>
+              <th  trans > FrontEnd and Utilites </th>
               <td>
                 JQuery, Bootstrap , SCSS, CSS, HTML, GoogleApis, Stripe
               </td>
             </tr>
 
             <tr>
-              <th> Backend and Utilites </th>
+              <th  trans > Backend and Utilites </th>
               <td> Linux, Git, Docker, Bash, SQL, MongoDB, Tensorflow, Keras, RaspBerry, OpenCV </td>
             </tr>
 
           </tbody></table>
         </div>
 
-        <div class="row h5 card-title"><b> Experience </b></div>
+        <div class="row h5 card-title"><b trans> Experience </b></div>
 
         <!-- jquery experiences cloner  -->
         <div class="experiences mt-3"> </div>
 
         <div>
         <div class="h5 mt-4 row card-title">
-          <b>Other</b>
+          <b trans >Other</b>
         </div>
 
         <div class="row">
 
         <table class="table table-sm table-borderless">
           <thead class="border-bottom pb-4">
-            <tr><td colspan="2"> Languages </td>
+            <tr><td colspan="2" trans > Languages </td>
           </tr></thead>
           <tbody>
             <tr>
-              <th> Spanish </th>
-              <td> written and spoken </td>
+              <th trans> Spanish </th>
+              <td trans > written and spoken </td>
             </tr>
             <tr>
-              <th> Catalan </th>
-              <td> written and spoken </td>
+              <th trans > Catalan </th>
+              <td trans > written and spoken </td>
             </tr>
             <tr>
-              <th> English </th>
-              <td> written and spoken </td>
+              <th trans > English </th>
+              <td trans > written and spoken </td>
             </tr>
             <tr>
-              <th> Russian </th>
-              <td> spoken </td>
+              <th trans > Russian </th>
+              <td trans > spoken </td>
             </tr>
             <tr>
-              <th> Romanian </th>
-              <td> spoken </td>
+              <th trans > Romanian </th>
+              <td trans > spoken </td>
             </tr>
           </tbody>
         </table>
