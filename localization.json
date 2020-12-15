@@ -5,9 +5,42 @@
     "prt"    : "Lenguajes / Tecnologías",
     "devTol" : "Herramientas de desarrollo",
     "webserv": "Frameworks / Serveridores",
-    "langs"  : "Spoken Languages",
+    "langs"  : "Lenguajes de Programación",
+    "local"  : "Lenguajes",
     "famfram": "Frameworks Familiares",
     "fut"    : "Lenguajes / Tecnologías",
-    "but"    : "Lenguajes / Tecnologías"
+    "softachdes" : "Diseño de Arquitecturas",
+    "en"     : "Inglés",
+    "es"     : "Español",
+    "spa"    : "España",
+    "es-ca"  : "Español/Catalán",
+    "ca"     : "Catalán",
+    "ro"     : "Romanés",
+    "ru"     : "Ruso",
+    "was"     : "Escrito y hablado",
+    "spp"     : "Hablado",
+    "metodologies" : "Metodologias",
+    "hard-sys"     : "HardWare y Systemas",
+    "frontutils"   : "FrontEnd y Utilidades",
+    "backutils"   : "BackEnd y Utilidades",
+    "other"     : "Otros",
+
+   "k1" : "- Recopile, analize y cree modelos de pronóstico para un sitio web de finanzas.",
+   "k2" : "- Refactorize varios proyectos antiguos.",
+   "k3" : "- Desarrolle un control de accesso remoto vinculado con un sitio web en un RaspBerry.",
+   "k4" : "- Desarrolle una aplicación móvil para vender repuestos de coche.",
+   "k5" : "- Participé en varios pequeños proyectos para ayudar al equipo.",
+
+   "d1" : "- Dessarrolle un ORM.",
+   "d2" : "- Desarrollé un servicio de correo electrónico intermediario para conversaciones privadas.",
+   "d3" : "- Creé una gestión de contenido de artículos que permitió una presentación más dinámica.",
+   "d4" : "- Revisé el contenido de la página web y optimicé parte de ella.",
+   "d5" : "- Creador de plantillas que administra los conceptos básicos del marco MVC.",
+   "d6" : "- Desarrollé un clasificador de certificados con TensorFlow y OpenCV.",
+
+   "i1" : "- Desarrollé un parser MySQL a partir de una antigua API de base de datos.",
+   "i2" : "- Cree un gestor de contenido para un aserradero.",
+   "i3" : "- Participé en varios pequeños proyectos para ayudar al equipo."
+
   }
 }
