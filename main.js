@@ -8,6 +8,13 @@ $(document).ready(function(){
   });
 
   $.ajax({
+    url : '/education.html',
+    success: function( data ){
+                $('.educations').html( data );
+    },
+  });
+
+  $.ajax({
     url: '/localization.json',
     dataType: "json",
     success: function( data ){

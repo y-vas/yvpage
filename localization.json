@@ -19,7 +19,7 @@
     "ru"     : "Ruso",
     "was"     : "Escrito y hablado",
     "spp"     : "Hablado",
-    
+
     "metodologies" : "Metodologias",
     "hard-sys"     : "HardWare y Systemas",
     "frontutils"   : "FrontEnd y Utilidades",
@@ -41,7 +41,10 @@
 
    "i1" : "- Desarrollé un parser MySQL a partir de una antigua API de base de datos.",
    "i2" : "- Cree un gestor de contenido para un aserradero.",
-   "i3" : "- Participé en varios pequeños proyectos para ayudar al equipo."
+   "i3" : "- Participé en varios pequeños proyectos para ayudar al equipo.",
+
+   "sysadmin" : "Grado Superior en Administracion de Sistemas",
+   "bachi" : "Bachillerato Tecnologico"
 
   }
 }
