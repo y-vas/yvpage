@@ -25,6 +25,8 @@
     "frontutils"   : "FrontEnd y Utilidades",
     "backutils"   : "BackEnd y Utilidades",
     "other"     : "Otros",
+    "exp"     : "Experiencia",
+    "edu"     : "Educación",
 
    "k1" : "- Recopile, analize y cree modelos de pronóstico para un sitio web de finanzas.",
    "k2" : "- Refactorize varios proyectos antiguos.",
