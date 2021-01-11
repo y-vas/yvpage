@@ -1,14 +1,14 @@
 version: "3.2"
 
 services:
-  yvpage_apache:
+  yvweb_apache:
     build:
       context: './apache/'
       args:
        APACHE_VERSION: ${APACHE_VERSION}
-       
+
     ports:
       - "80:80"
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/
-    container_name: yvpage_apache
+    container_name: yvweb_apache
