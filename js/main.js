@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
-  $.ajax({
-    url : '/experiences.html',
-    success: function( data ){
-                $('.experiences').html( data );
-    },
-  });
+  links = [
+    'experiences',
+    'educations',
+    'skills'
+  ]
 
-  $.ajax({
-    url : '/education.html',
-    success: function( data ){
-                $('.educations').html( data );
-    },
-  });
+  for (var i = 0; i < links.length; i++) {
+    let link = links[i];
+    $.ajax({
+      url : `/${link}.html`,
+      success: function( data ){ $(`.${link}`).html( data ); },
+    });
+  }
 
   $.ajax({
     url: '/localization.json',
@@ -27,7 +27,6 @@ $(document).ready(function(){
       } catch (e) {
         console.log('language not avaliable');
       }
-
     },
   });
 

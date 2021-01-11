@@ -6,239 +6,89 @@
 <head>
   <meta charset="utf-8">
   <title> Vasyl Yovdiy </title>
-  <link rel="icon" href="vylogo.svg" >
+
+  <link rel="icon" href="imgs/vylogo.svg" >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css" media="screen,print">
+  <link rel="stylesheet" href="styles/style.css" media="screen,print">
+  <link rel="stylesheet" href="styles/decorations.css" media="screen,print">
+  <script src="https://use.fontawesome.com/b4e7403eb9.js"></script>
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-  <script src="main.js" ></script>
-  <script src="city.js" ></script>
+  <script src="js/main.js" ></script>
+  <script src="js/city.js" ></script>
 </head>
 
 <body class="mg-body">
   <canvas id="canvas" class="no-print"> </canvas>
 
-  <ul class="nav nav-tabs nav-tabs-nostyle border-0 no-print ">
-    <li class="nav-item "> <a class="nav-link  text-secondary border-0 active" data-toggle="tab" href="#complex"> Full </a> </li>
-    <li class="nav-item"> <a class="nav-link text-secondary border-0 " data-toggle="tab" href="#simple"> Simple </a> </li>
-  </ul>
-
   <div class="tab-content" id='cv' >
-
     <div class="row mb-4 pb-3 border-bottom">
-
-      <div class="col-8" style="list-style-type: none;">
-
-      <li> <a class="text-info" href="#"> +34 611412443 </a></li>
-      <li> <a class="text-info" href="https://www.linkedin.com/in/vasylyovdiy/"> linkedin.com/in/vasylyovdiy/ </a> </li>
-      <li> <a class="text-info" href="https://vas.netlify.app/"> vas.netlify.app </a> </li>
-      <li> <a class="text-info" href="#"> yovdiyvasyl@gmail.com </a></li>
-      <li> <a class="text-info" href="https://www.github.com/y-vas"> github.com/y-vas </a> </li>
-
-      </div>
       <div class="col-4">
         <div class="row">
           <div class="text-right">
-            <h1 class="fa-merienda"> Vasyl Yovdiy </h1>
-            <h4 trans='role' class="mt-4"> Full Stack Developer </h4>
+            <h1 class="fa-tomorrow"> Vasyl Yovdiy </h1>
+            <h4 trans='role' class="mt-4 fa-tomorrow-slim"><i> Full Stack Developer </i></h4>
           </div>
         </div>
       </div>
+
+      <div class="col-8 text-right gray-li" style="">
+        <li> <a class="text-info" href="#"> +34-611412443 <i class="fa fa-phone" aria-hidden="true"></i> </a></li>
+        <li> <a class="text-info" target="_blank" href="https://www.linkedin.com/in/vasylyovdiy/"> linkedin.com/in/vasylyovdiy/ <i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+        <li> <a class="text-info" target="_blank" href="https://vas.netlify.app/"> vas.netlify.app  <i class="fa fa-book" aria-hidden="true"></i> </a></li>
+        <li> <a class="text-info" href="#"> yovdiyvasyl@gmail.com <i class="fa fa-envelope" aria-hidden="true"></i> </a></li>
+        <li> <a class="text-info" target="_blank" href="https://www.github.com/y-vas"> github.com/y-vas <i class="fa fa-github" aria-hidden="true"></i> </a></li>
+      </div>
+
     </div>
 
-
-
-    <div id="complex" class="tab-pane active ">
-      <h4 trans='skills' class="row pb-3"> Skills </h4>
+    <div id="complex" class="tab-pane active">
 
       <div class="row">
+        <div class="col-9 border-right">
 
-        <div class="col-6 mt-3">
-          <b trans='prt' > Programing Languages / Tecnologies </b>
-          <hr>
+          <div class="mr-4">
 
-          <li> Python3, tensorflow, selenium, keras, jupyter, matplotlib ,numpy ,pandas ,pip , pypi </li>
-          <li> JavaScript, TypeScript, JQuery, Ajax, select2, d3.js/c3.js , Dragula </li>
+            <h4 class="row fa-tomorrow" trans="exp"> Experience </h4>
+            <div class="experiences mt-3"> </div>
 
-          <li> PHP, Composer, PHPMailer, Stripe, Doctrine </li>
-          <li> Bash, Grep, RegEx, awk, vim </li>
-          <li> JAVA, Swing </li>
-          <li> SCSS, CSS, Bootstrap </li>
+          </div>
 
-          <li> XML, XSL, HTML, YAML, JSON, SEO basics,  </li>
-          <li trans='softachdes'> Software Architecture Design, UML </li>
-          <li> RaspBerry, GPIO </li>
-
-          <li> C/C++/Cython </li>
         </div>
+        <div class="col-3">
 
-          <div class="col-6 mt-3 ">
-            <b trans='devTol' > Development Tools </b>
-            <hr>
+          <h4 trans='skills' class="row ml-4 mt-2 fa-tomorrow"> Skills </h4>
+          <div class="skills"></div>
 
-            <li> Linux </li>
-            <li> Git, GitHub, BitBuket </li>
-            <li> Docker </li>
-            <li> VirtualBox </li>
-            <li> Atom, Visual Studio </li>
-            <li> MySQLWorkbench, DBeaver </li>
-            <li> Compass </li>
-            <li> GoogleApis ,GWS </li>
-            <li> Eclipse, NetBeans </li>
+          <h4 trans='edu' class="row ml-4 mt-4 fa-tomorrow"> Education </h4>
+          <div class="educations mt-3"> </div>
 
+          <h4 trans='langs' class="row ml-4 mt-4 fa-tomorrow"> Spoken Languages </h4>
+          <div class="mt-3 buckets">
+            <li trans="en" > English </li>
+            <li trans="es-ca" > Spanish/Catalan </li>
+            <li trans="ro" > Romanian (spoken) </li>
+            <li trans="ru" > Russian (spoken with difficulties) </li>
           </div>
 
-          <div class="col-6 mt-3">
-            <b trans='webserv'> Frameworks / Web Servers </b>
-            <hr>
-
-            <li> Laravel/Symphony </li>
-            <li> Django </li>
-            <li> Wordpress </li>
-            <li> NodeJs, Angular, Ionic </li>
-            <li> Apache </li>
-            <li> Nginx </li>
-          </div>
-
-          <div class="col-6 mt-3">
-            <b> RDBMS </b>
-            <hr>
-
-            <li> SQL Server/SQL </li>
-            <li> My SQL </li>
-            <li> SqlLite </li>
-            <li> Maria DB </li>
-            <li> MongoDB </li>
-            <li> PostgradeSQL </li>
-          </div>
-
-          <div class="col-6">
-
-            <div class="row">
-
-              <div class="col-6 mt-3">
-                <b trans='langs' > Spoken Languages </b>
-                <hr>
-
-                <li trans="en" > English </li>
-                <li trans="es-ca" > Spanish/Catalan </li>
-                <li trans="ro" > Romanian (spoken) </li>
-                <li trans="ru" > Russian (spoken with difficulties) </li>
-              </div>
-
-              <div class="col-6 mt-3">
-                <b trans="metodologies" > Methodologies </b>
-                <hr>
-                <li> Scrum/Agile </li>
-                <li> SOLID </li>
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-6 mt-3">
-            <b trans="hard-sys" > Hardware / Systems </b>
-            <hr>
-            <li> Linux, Ubuntu, Mint, Arch, Raspibian </li>
-            <li> MS DOS  </li>
-            <li> Microsoft Windows 95/ 98/ 2000/ XP/ 2003 Server/ Vista </li>
-            <li> Network Tecnologies </li>
+          <h4 trans='other' class="row ml-4 mt-4 fa-tomorrow"> Other </h4>
+          <div class="mt-3 buckets">
+            <li> <b trans='loc'>Current Location </b>: Spain/Barcelona/Manlleu </li>
           </div>
 
 
         </div>
-
-        <h4 class="page-break row  mt-5  pb-3" trans="exp"> Experience </h4>
-        <!-- jquery experiences cloner  -->
-        <div class="experiences mt-3"> </div>
-
-        <h4 class="row  mt-5  pb-3" trans="edu"> Education </h4>
-        <div class="educations mt-3"> </div>
-
-      </div>
-    <div id="simple" class="tab-pane fade">
-
-        <div class="row h5 card-title">
-          <b trans='skills' >Skills</b>
-        </div>
-
-        <div>
-          <table class="table table-borderless table-sm">
-            <tbody><tr>
-              <th trans='prt' > Programing Languages </th>
-              <td> Python, PHP, JAVA, JavaScript, TypeScript, C++ </td>
-            </tr>
-
-            <tr>
-              <th trans='famfram' > Familiar Frameworks </th>
-              <td> Laravel, Symphony, NodeJs , Django, Angular, Ionic, Wordpress </td>
-            </tr>
-
-            <tr>
-              <th  trans="frontutils" > FrontEnd and Utilites </th>
-              <td>
-                JQuery, Bootstrap , SCSS, CSS, HTML, GoogleApis, Stripe
-              </td>
-            </tr>
-
-            <tr>
-              <th  trans="backutils" > Backend and Utilites </th>
-              <td> Linux, Git, Docker, Bash, SQL, MongoDB, Tensorflow, Keras, RaspBerry, OpenCV </td>
-            </tr>
-
-          </tbody></table>
-        </div>
-
-        <div class="row h5 card-title"><b trans="exp"> Experience </b></div>
-
-        <!-- jquery experiences cloner  -->
-        <div class="experiences mt-3"> </div>
-
-        <div>
-        <div class="h5 mt-4 row card-title">
-          <b trans="other" >Other</b>
-        </div>
-
-        <div class="row">
-
-        <table class="table table-sm table-borderless">
-          <thead class="border-bottom pb-4">
-            <tr><td colspan="2" trans="local" > Languages </td>
-          </tr></thead>
-          <tbody>
-            <tr>
-              <th trans="es"> Spanish </th>
-              <td trans="was" > written and spoken </td>
-            </tr>
-            <tr>
-              <th trans="ca" > Catalan </th>
-              <td trans="was"> written and spoken </td>
-            </tr>
-            <tr>
-              <th trans="en" > English </th>
-              <td trans="was"> written and spoken </td>
-            </tr>
-            <tr>
-              <th trans="ru" > Russian </th>
-              <td trans="spp"> spoken </td>
-            </tr>
-            <tr>
-              <th trans="ro" > Romanian </th>
-              <td trans="spp"> spoken </td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
       </div>
 
-    </div>
+
+
+      </div>
   </div>
 
   </body>

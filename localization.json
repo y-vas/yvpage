@@ -27,6 +27,7 @@
     "other"     : "Otros",
     "exp"     : "Experiencia",
     "edu"     : "Educación",
+    "loc"     : "Ubicación actual",
 
    "k1" : "- Recopile, analize y cree modelos de pronóstico para un sitio web de finanzas.",
    "k2" : "- Refactorize varios proyectos antiguos.",
