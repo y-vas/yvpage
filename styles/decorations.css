@@ -1,0 +1,27 @@
+.skills-bucket{
+
+}
+
+.experiences .skills-bucket{
+  margin-top: 5px;
+}
+
+.educations {
+  font-size: .7em;
+}
+
+.skills-bucket li {
+  text-decoration: none !important;
+  list-style-type: none;
+  font-size: .7em;
+  padding: 0 4px;
+  color: var(--secondary);
+}
+
+.buckets li {
+  text-decoration: none !important;
+  list-style-type: none;
+  font-size: .7em;
+  padding: 0 4px;
+  color: var(--secondary);
+}
