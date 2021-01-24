@@ -25,3 +25,9 @@
   padding: 0 4px;
   color: var(--secondary);
 }
+
+.skill-selected{
+  background-color: var(--secondary);
+  color: white !important;
+  cursor: pointer;
+}
