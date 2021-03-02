@@ -55,4 +55,14 @@ $(document).ready(function(){
       });
   });
 
+
+  $('#cv-show').click(function(){
+    $('#cv').toggleClass('expandY');
+    $('#print-btn').toggleClass('d-none');
+  });
+
+  setTimeout(function(){
+    $('#cv').addClass('expandY');
+  } ,100);
+
 })

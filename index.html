@@ -17,10 +17,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yovdiy Vasyl CV" />
+
   <title> Vasyl Yovdiy </title>
-  <link rel="alternate" hreflang="en" href="https://vas.netlify.app">
+  <meta name="description" content="Come and check my website before someone else does! Don't lose this oportunity!" />
+
   <link rel="canonical" hreflang="en" href="https://vas.netlify.app">
+  <link rel="alternate" hreflang="en" href="https://vas.netlify.app">
 
   <meta property="og:locale"           content="es_ES">
   <meta property="og:type"             content="website">
@@ -28,8 +30,8 @@
   <meta property="og:description"      content="Yovdiy Vasyl CV">
   <meta property="og:url"              content="https://vas.netlify.app">
   <meta property="og:site_name"        content="Vasyl Yovdiy">
-  <meta property="og:image"            content="/imgs/vylogo.svg">
-  <meta property="og:image:secure_url" content="https://vas.netlify.app/imgs/vylogo.svg">
+  <meta property="og:image"            content="https://vas.netlify.app/imgs/vylogo.png">
+  <meta property="og:image:secure_url" content="https://vas.netlify.app/imgs/vylogo.png">
   <meta property="og:image:width"      content="1024">
   <meta property="og:image:height"     content="512">
 
@@ -60,13 +62,14 @@
 
   <ul class="nav justify-content bg-info no-print">
 
-    <!--
-
-    <li class="nav-item">
+    <li class="nav-item" id="cv-show">
       <a class="nav-link text-white" href="#">
         <i class="fa fa-user-circle" aria-hidden="true"></i>
       </a>
     </li>
+
+    <!--
+
 
     <li class="nav-item">
       <a class="nav-link text-white" href="#">
@@ -76,7 +79,7 @@
 
    -->
 
-    <li class="nav-item" onclick="print()">
+    <li class="nav-item" id="print-btn" onclick="print()">
       <a class="nav-link text-white" href="#">
         <i class="fa fa-print" aria-hidden="true"></i>
       </a>
@@ -85,7 +88,7 @@
 
   </ul>
 
-  <div class="tab-content" id='cv' >
+  <div class="tab-content" id='cv'>
     <div class="row mb-4 pb-3 border-bottom">
 
       <div class="col-4">
