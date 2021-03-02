@@ -1,5 +1,6 @@
 .experiences .skills-bucket{
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .educations {
@@ -23,7 +24,7 @@
 }
 
 .skill-selected {
-  background-color: var(--secondary);
+  background-color: var(--color-blod);
   color: white !important;
   cursor: pointer;
 }
