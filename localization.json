@@ -10,6 +10,7 @@
     "local"  : "Lenguajes",
     "famfram": "Frameworks Familiares",
     "softachdes" : "Diseño de Arquitecturas",
+
     "en"     : "Inglés",
     "es"     : "Español",
     "spa"    : "España",
@@ -25,7 +26,9 @@
     "frontutils"   : "FrontEnd y Utilidades",
     "backutils"   : "BackEnd y Utilidades",
     "other"     : "Otros",
+    
     "exp"     : "Experiencia",
+    "myproj"  : "Mira mis proyectos",
     "edu"     : "Educación",
     "loc"     : "Ubicación actual",
 
@@ -45,6 +48,8 @@
    "i1" : "- Desarrollé un parser MySQL a partir de una antigua API de base de datos.",
    "i2" : "- Cree un gestor de contenido para un aserradero.",
    "i3" : "- Participé en varios pequeños proyectos para ayudar al equipo.",
+
+   "o1" : "- Actualmente buscando una posicion de teletrabajo.",
 
    "sysadmin" : "Grado Superior en Administracion de Sistemas",
    "bachi" : "Bachillerato Tecnologico"

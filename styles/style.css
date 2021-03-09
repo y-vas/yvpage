@@ -22,7 +22,7 @@ a.text-info:focus, a.text-info:hover {
   z-index: -1;
 }
 
-#nav i{
+#nav i, #dots{
   color: var(--color-blod);
 }
 

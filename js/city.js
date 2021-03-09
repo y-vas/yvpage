@@ -89,6 +89,7 @@ $( document ).ready(function() {
 
 
       CTX.fillStyle= 'hsl(202,50%,'+(colr[2]+i/3)+"%)"; // BUILDING COLOR
+
       typeBlock = v2[8];
 
       if(typeBlock == 1){
@@ -110,14 +111,17 @@ $( document ).ready(function() {
 
       v2[0] = bp + bv;
       if (bp > w) { v2[0] = -bw; }
-      if (mx > bp && mx < bp+bw && my > h-bh) {if (msove < i) { msove = i }}
+      if (mx > bp && mx < bp+bw && my > h-bh) {
+          if (msove < i) { msove = i }
+      }
 
-      CTX.fillRect(bp,h,bw,-v2[3]);
+      CTX.fillRect( bp, h, bw ,-v2[3] );
     }
 
-
   }, 15);
+
 });
+
 
 function makeDecors(x,y,w,he, h){
   return [[ w-w/3,h-he-20,w/3,y ]];
@@ -126,7 +130,9 @@ function makeDecors(x,y,w,he, h){
 function getRandomColor() {
   lum = Math.floor(Math.random() * 8) + 2;
   sat = Math.floor(Math.random() * 70) + 50;
+
   color = [ city_color, sat, lum ];
   color = [ 52,	52,	 10 ];
+
   return color;
 }
