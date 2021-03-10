@@ -93,7 +93,7 @@ $( document ).ready(function() {
       typeBlock = v2[8];
 
       if(typeBlock == 1){
-        CTX.fillRect(bp,v2[1],bw,-v2[3]);
+        CTX.fillRect( bp,v2[1],bw,-v2[3] );
 
         for (var car = 0; car < decs.length; car++) { /// cars ///
           carVel = decs[car];
