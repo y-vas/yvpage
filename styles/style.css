@@ -93,6 +93,7 @@ a.text-info:focus, a.text-info:hover {
   }
 }
 
+
 .page-break {
   display: none;
 }
@@ -113,5 +114,13 @@ a.text-info:focus, a.text-info:hover {
   .page-break {
     display: block;
     page-break-before: always;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .mg-body{
+    margin: 0% 0%;
+    position: relative;
   }
 }
