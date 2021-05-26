@@ -27,8 +27,8 @@
 
 .skill-selected {
   background-color: var(--color-blod);
-  color: white !important;
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 0px 5px;
+  color           : white !important;
+  cursor          : pointer;
+  transition      : 0.5s;
+  border-radius   : 0px 5px;
 }
