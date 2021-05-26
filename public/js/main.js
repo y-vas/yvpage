@@ -49,6 +49,11 @@ $(document).ready(function(){
     let skill = $(this).text().trim().toLowerCase();
     $( this )
       .attr('ncss', skill )
+      .click(function(){
+        let skill = $(this).attr('ncss')
+        $(`li[ncss="${skill}"]`)
+          .toggleClass('skill-clicked')
+      })
       .mouseover(function(){
         let skill = $(this).attr('ncss')
         $(`li[ncss="${skill}"]`)
@@ -58,7 +63,8 @@ $(document).ready(function(){
         let skill = $( this ).attr('ncss')
         $(`li[ncss="${skill}"]`)
           .removeClass( 'skill-selected' )
-      });
+      })
+      ;
   });
 
   let proj = $('*[trans="myproj"]').html()

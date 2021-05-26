@@ -13,22 +13,29 @@
   font-size: .7em;
   padding: 0 4px;
   color: var(--secondary);
-  border-radius: 0px 5px;
-  transition: 0.5s;
+  border-radius: 2px;
+  transition: 0.2s;
+  margin   : 1px 1px 1px 0px;
 }
 
 .buckets li {
   text-decoration: none !important;
   list-style-type: none;
   font-size: .7em;
-  padding: 0 4px;
-  color: var(--secondary);
+  padding  : 0 4px;
+  color: var( --secondary );
 }
 
-.skill-selected {
+.skill-selected , .skill-clicked {
   background-color: var(--color-blod);
   color           : white !important;
   cursor          : pointer;
-  transition      : 0.5s;
-  border-radius   : 0px 5px;
+  border-radius   : 2px;
+  transition      : 0.2s;
+}
+
+.skill-selected {
+  -webkit-transform: rotateZ(2deg);
+  -ms-transform: rotateZ(2deg);
+  transform: rotateZ(2deg);
 }
