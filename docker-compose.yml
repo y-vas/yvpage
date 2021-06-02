@@ -11,4 +11,5 @@ services:
       - "8080:80"
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/
-    container_name: yvweb_apache
+    container_name:
+      yvweb_apache

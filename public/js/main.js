@@ -14,32 +14,32 @@ function foo(txt){
 
 $(document).ready(function(){
   links = [
-    'experiences',
-    'educations',
+    'experiences' ,
+    'educations'  ,
     'skills'
   ]
 
   for (var i = 0; i < links.length; i++) {
     let link = links[i];
     $.ajax({
-      async: false,
-      url : `/${link}.html`,
-      success: function( data ){ $(`.${link}`).html( data ); },
+      async   : false,
+      url     : `/${link}.html`,
+      success : function( data ){ $(`.${link}`).html( data ); },
     });
   }
 
   $.ajax({
-    url: '/localization.json',
-    dataType: "json",
-    async: false,
-    success: function( data ){
+    url      : '/localization.json',
+    dataType : "json",
+    async    : false,
+    success  : function( data ){
       try {
         $('*[trans]').each( function(i, e){
-          $(this).text(
+          $( this ).text(
             data[ navigator.language ][$(this).attr('trans')]
           );
         });
-      } catch (e) {
+      } catch ( e ){
         console.log('language not avaliable');
       }
     },
@@ -49,22 +49,21 @@ $(document).ready(function(){
     let skill = $(this).text().trim().toLowerCase();
     $( this )
       .attr('ncss', skill )
-      .click(function(){
+      .click( function(){
         let skill = $(this).attr('ncss')
         $(`li[ncss="${skill}"]`)
           .toggleClass('skill-clicked')
       })
-      .mouseover(function(){
+      .mouseover( function(){
         let skill = $(this).attr('ncss')
         $(`li[ncss="${skill}"]`)
           .addClass('skill-selected')
       })
-      .mouseleave(function(){
+      .mouseleave( function(){
         let skill = $( this ).attr('ncss')
         $(`li[ncss="${skill}"]`)
           .removeClass( 'skill-selected' )
-      })
-      ;
+      });
   });
 
   let proj = $('*[trans="myproj"]').html()
@@ -73,11 +72,11 @@ $(document).ready(function(){
     $('#cv').toggleClass('expandY');
     $('#projects').toggleClass('d-none');
 
-    if(!$('#projects').hasClass('d-none')){
-      $('*[trans="myproj"]').html('')
+    if(!$( '#projects' ).hasClass( 'd-none' )){
+      $('*[trans="myproj"]').html('');
     }
 
-    $('#print-btn').toggleClass('d-none');
+    $( '#print-btn' ).toggleClass('d-none');
   });
 
   setTimeout(function(){
